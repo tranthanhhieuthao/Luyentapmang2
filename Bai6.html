@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<script>
+    let mang=["t","r","a","n","-","t","h","a","n","h","-","h","i","e","u"];
+               //Cách 1
+    for (let i=0;i<mang.length;i++){
+        if (mang[i]=="-"){
+            mang[i]="_";
+        }
+    }
+    document.write(mang.join());
+
+                //Cách 2
+    // let mangmoi=mang.toString().replace(/-/g,"_");
+    // document.write(mangmoi);
+
+</script>
+</body>
+</html>

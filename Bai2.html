@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<input type="button" value="Đảo ngược" onclick="ham()"/>
+<p id="daonguoc"></p>
+<br/>
+<br/>
+<script>
+let mang=["c","1","2","t","u"];
+let tempt;
+let count=mang.length;
+document.write("mang"+"= "+"["+mang.join()+"]");
+function ham() {
+for (let i=0;i<count/2;i++){
+    tempt=mang[i];
+    mang[i]=mang[count-1];
+    mang[count-1]=tempt;
+    count--;
+}
+document.getElementById("daonguoc").innerHTML="daomang"+"= "+"["+mang.valueOf()+"]";
+}
+
+</script>
+</body>
+</html>
